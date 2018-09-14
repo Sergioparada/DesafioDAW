@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/Productos.css">  
+</head>
+<body class="formdatos">
+   <form action="Index.html" method="post">
+   	 <img src="img/logo.png" alt="Logo de empresa"/>
+   	 <h1>Ingreso de Productos</h1>
+   	 <fieldset id="datos">
+   	 	<legend>Datos del Producto</legend>
+   	 	<table border="0">
+   	 		<tr>
+   	 			<td>Id Producto:</td>
+            <td>
+              <input type="text" name="IdProduct" title="Solo se aceptan numeros" required/>
+            </td>  
+   	 		</tr>
+        <tr>
+            <td>Producto:</td>
+              <td><input type="text" title="Solo se aceptan letras" required/>
+             </td> 
+        </tr>
+   	 		<tr>
+   	 			<td>Foto de producto:</td>
+   	 			<td>
+   	 				<input type="file" name="foto" required/>
+   	 			</td>
+   	 		</tr>
+   	 		<tr>
+   	 		   <td>Fecha de ingreso:</td>
+          <td>
+            <input type="date" name="fechaingreso" required/>
+          </td> 
+   	 		</tr>
+   	 		<tr>
+   	 			<td>Precio:</td>
+   	 			<td>
+   	 				<input type="text" name="precio" required/>
+   	 			</td>
+   	 		    
+   	 		 </tr>
+   	 		 <tr>
+   	 		 	   <td>Unidad de venta:</td>
+          <td>
+            <input type="text" name="precio" required/>
+          </td>
+   	 		 <tr>
+   	 		 	<td>Descripci&oacute;n:</td>
+   	 		 	<td>
+   	 		 	    <textarea rows="5" cols="30" required></textarea>
+   	 		 	</td>
+   	 		 </tr>
+   	 	</table>
+   	 </fieldset>
+     <fieldset id="categorias">
+     	<legend>Categoría a la que pertenece</legend>
+     	Dirigido para:<br><br>
+     	<input type="radio" name="categ" value="Caballeros" checked>Caballeros<br>
+     	<input type="radio" name="categ" value="Damas">Damas<br>
+     	<input type="radio" name="categ" value="Niños">Niños<br>
+     	<input type="radio" name="categ" value="Niñas">Niñas<br><br>
+     	Categorizar Ingreso:
+     	<select id="Selarea" single>
+     		<option value="Camisas">Camisas</option>
+     		<option value="Shorts">Shorts</option>
+     		<option value="Vestidos">Vestidos</option>
+     		<option value="Pantalones">Pantalones</option>
+     		<option value="Chaquetas">Chaquetas</option>
+     		<option value="Trajes">Trajes de Gala</option>
+        <option value="Calzonetas">Calzonetas</option>
+     	</select>
+     </fieldset>
+     <fieldset id="aficiones">
+     	<legend>Cuantificar Ingreso</legend>
+     	Indique la cantidad del producto:<br><br>
+     	<input type="checkbox" name="aficion" value="deporte" checked>100- Cien<br>
+     	<input type="checkbox" name="aficion" value="musica">300- Trescientos<br>
+     	<input type="checkbox" name="aficion" value="lectura">500 -Quinientos<br>
+     	<input type="checkbox" name="aficion" value="pesca">800- Ochocientos<br>
+     	<input type="checkbox" name="aficion" value="pasear">1000- Mil<br>
+     	<input type="checkbox" name="aficion" value="cine">1500- Mil Quinientoss
+     </fieldset>
+     <button class="boton" type="submit">Enviar información</button>
+   </form>
+</body>
+</html>
