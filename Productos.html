@@ -12,78 +12,75 @@
    	 <fieldset id="datos">
    	 	<legend>Datos del Producto</legend>
    	 	<table border="0">
-   	 		<tr>
-   	 			<td>Id Producto:</td>
-            <td>
-              <input type="text" name="IdProduct" title="Solo se aceptan numeros" required/>
-            </td>  
-   	 		</tr>
         <tr>
             <td>Producto:</td>
-              <td><input type="text" title="Solo se aceptan letras" required/>
+              <td><input id="nomProd" type="text" title="Solo se aceptan letras" required/>
              </td> 
         </tr>
    	 		<tr>
    	 			<td>Foto de producto:</td>
    	 			<td>
-   	 				<input type="file" name="foto" required/>
+   	 				<input id="fotoPath" type="file" id="photoPath" name="foto" required accept="image/png, image/jpeg" />
    	 			</td>
    	 		</tr>
    	 		<tr>
    	 		   <td>Fecha de ingreso:</td>
           <td>
-            <input type="date" name="fechaingreso" required/>
+            <input label="Fecha" type="date" id="fechaIntro" name="">
           </td> 
    	 		</tr>
    	 		<tr>
    	 			<td>Precio:</td>
    	 			<td>
-   	 				<input type="text" name="precio" required/>
+   	 				<input type="text" id="precioProd" name="precio" required/>
    	 			</td>
    	 		    
    	 		 </tr>
    	 		 <tr>
    	 		 	   <td>Unidad de venta:</td>
           <td>
-            <input type="text" name="precio" required/>
+            <input type="text" id="unidadVenta" name="precio" required/>
           </td>
    	 		 <tr>
    	 		 	<td>Descripci&oacute;n:</td>
    	 		 	<td>
-   	 		 	    <textarea rows="5" cols="30" required></textarea>
+   	 		 	    <textarea id="descProd" rows="5" cols="30" required></textarea>
    	 		 	</td>
    	 		 </tr>
    	 	</table>
    	 </fieldset>
      <fieldset id="categorias">
+     
      	<legend>Categoría a la que pertenece</legend>
      	Dirigido para:<br><br>
-     	<input type="radio" name="categ" value="Caballeros" checked>Caballeros<br>
-     	<input type="radio" name="categ" value="Damas">Damas<br>
-     	<input type="radio" name="categ" value="Niños">Niños<br>
-     	<input type="radio" name="categ" value="Niñas">Niñas<br><br>
+     	<input type="radio"  value="Caballeros" name="grupo" checked>Caballeros</input><br>
+     	<input type="radio"  value="Damas" name="grupo">Damas<br>
+     	<input type="radio"  value="Ninos" name="grupo">Niños<br>
+     	<input type="radio"  value="Ninas" name="grupo">Niñas<br><br>
+    
      	Categorizar Ingreso:
-     	<select id="Selarea" single>
+
+     	<select id="tiposProd" single>
      		<option value="Camisas">Camisas</option>
      		<option value="Shorts">Shorts</option>
-     		<option value="Vestidos">Vestidos</option>
      		<option value="Pantalones">Pantalones</option>
-     		<option value="Chaquetas">Chaquetas</option>
-     		<option value="Trajes">Trajes de Gala</option>
+     		<option value="Chaquetas">Sudadera</option>
+     		<option value="Trajes">Trajes de Competencia</option>
         <option value="Calzonetas">Calzonetas</option>
      	</select>
      </fieldset>
-     <fieldset id="aficiones">
+     <fieldset id="stocks">
      	<legend>Cuantificar Ingreso</legend>
      	Indique la cantidad del producto:<br><br>
-     	<input type="checkbox" name="aficion" value="deporte" checked>100- Cien<br>
-     	<input type="checkbox" name="aficion" value="musica">300- Trescientos<br>
-     	<input type="checkbox" name="aficion" value="lectura">500 -Quinientos<br>
-     	<input type="checkbox" name="aficion" value="pesca">800- Ochocientos<br>
-     	<input type="checkbox" name="aficion" value="pasear">1000- Mil<br>
-     	<input type="checkbox" name="aficion" value="cine">1500- Mil Quinientoss
+     	<input type="radio" name="stock" value="100" checked>100- Cien<br>
+     	<input type="radio" name="stock" value="300">300- Trescientos<br>
+     	<input type="radio" name="stock" value="500">500 -Quinientos<br>
+     	<input type="radio" name="stock" value="800">800- Ochocientos<br>
+     	<input type="radio" name="stock" value="1000">1000- Mil<br>
+     	<input type="radio" name="stock" value="1500">1500- Mil Quinientoss
      </fieldset>
-     <button class="boton" type="submit">Enviar información</button>
+     <input type="button" class="boton" id="btnAceptarNom" name="" value="Enviar">
    </form>
+   <script type="text/javascript" src="js/cata.js"></script>
 </body>
 </html>

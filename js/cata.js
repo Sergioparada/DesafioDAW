@@ -1,6 +1,6 @@
 var producto = [];
 var tipos = [];
-var tallas = [];
+
 var fotos = [];
 var fechas = [];
 var precios = [];
@@ -12,27 +12,27 @@ var cat=[];
 var cantidad=[]
 producto = JSON.parse(localStorage['producto']);
 tipos = JSON.parse(localStorage['tipos']);
-tallas = JSON.parse(localStorage['tallas']);
+
 fotosReal = JSON.parse(localStorage['fotosReal']);
 fechas = JSON.parse(localStorage['fechas']);
 precios = JSON.parse(localStorage['precios']);
 unidad = JSON.parse(localStorage['unidad']);
 unidad = JSON.parse(localStorage['unidad']);
 desc = JSON.parse(localStorage['desc']);
-//cantidad = JSON.parse(localStorage['cantidad']);
+cantidad = JSON.parse(localStorage['cantidad']);
 id=parseInt(localStorage.getItem('ids'));
 
 
 function guardarProd(){
   producto[id]=document.getElementById("nomProd").value;
   tipos[id]=document.getElementById("tiposProd").value;
-  tallas[id]=document.getElementById("tallaProd").value;
+ 
   fechas[id]=document.getElementById("fechaIntro").value;
   precios[id]=document.getElementById("precioProd").value;
   unidad[id]=document.getElementById("unidadVenta").value;
   desc[id]=document.getElementById("descProd").value;
   cat[id]=document.querySelector('input[name="grupo"]:checked').value
-  cantidad[id]=document.getElementById("cantProd").value;
+  cantidad[id]=document.querySelector('input[name="stock"]:checked').value;
   
  	fotos[id] = document.getElementById('fotoPath').value;
 	if (fotos[id]) {
@@ -51,7 +51,7 @@ function guardarProd(){
  
   console.log(producto);
   console.log(tipos);
-  console.log(tallas);
+  
   console.log(id);
   console.log(fotosReal);
   console.log(fechas);
@@ -68,9 +68,7 @@ function guardarProd(){
   localStorage.setItem('tipos', JSONguardarTipos);
   tipos = JSON.parse(localStorage['tipos']);
 
-  var JSONguardarTallas = JSON.stringify(tallas);
-  localStorage.setItem('tallas', JSONguardarTallas);
-  tallas = JSON.parse(localStorage['tallas']);
+
 
   var JSONguardarFotos = JSON.stringify(fotosReal);
   localStorage.setItem('fotosReal', JSONguardarFotos);
