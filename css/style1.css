@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+
+body{
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+
+
+#izq{
+    float: left;
+    padding-left: 15px;
+}
+#der{
+    padding-left: 50px;
+}
+
+header div, footer div{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 1%;
+}
+
+header h2{
+    font-size: 1.5rem;
+}
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 260px;
+    width: 23%;
+    text-align: 
+    
+}
+
+section article:hover{
+    cursor: pointer;
+    background-color: rgba(31,31,31, 0.1);
+    
+}
+
+section article h3{
+    color: #2d70bc;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+section article img{
+    height: 180px;
+
+    max-width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+article{
+    float: left;
+    margin: 0.5%;
+   box-sizing: border-box;
+    border: 1px solid #c36c08;
+    padding: 10px;
+    overflow: hidden;
+}
+

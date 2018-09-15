@@ -21,6 +21,7 @@ unidad = JSON.parse(localStorage['unidad']);
 desc = JSON.parse(localStorage['desc']);
 cantidad = JSON.parse(localStorage['cantidad']);
 id=parseInt(localStorage.getItem('ids'));
+cat = JSON.parse(localStorage['cat']);
 
 
 function guardarProd(){
@@ -31,7 +32,7 @@ function guardarProd(){
   precios[id]=document.getElementById("precioProd").value;
   unidad[id]=document.getElementById("unidadVenta").value;
   desc[id]=document.getElementById("descProd").value;
-  cat[id]=document.querySelector('input[name="grupo"]:checked').value
+  cat[id]=document.querySelector('input[name="grupo"]:checked').value; //dirigido a 
   cantidad[id]=document.querySelector('input[name="stock"]:checked').value;
   
  	fotos[id] = document.getElementById('fotoPath').value;
@@ -93,6 +94,10 @@ function guardarProd(){
   var JSONguardarCant = JSON.stringify(cantidad);
   localStorage.setItem('cantidad', JSONguardarCant);
   cantidad = JSON.parse(localStorage['cantidad']);
+
+  var JSONguardarCat = JSON.stringify(cat);
+  localStorage.setItem('cat', JSONguardarCat);
+  cat = JSON.parse(localStorage['cat']);
 
 }
 

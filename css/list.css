@@ -1,0 +1,21 @@
+body{
+	background-color: gray;
+}
+
+table{
+	border: solid 0.5px;
+}
+td{
+	border: solid 1px;
+}
+tr{
+	border: solid 1px;
+}
+th{
+	width: 100px;
+	border: solid 1px; 
+}
+
+#desc{
+	width: 300px;
+}

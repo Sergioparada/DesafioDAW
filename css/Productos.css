@@ -99,3 +99,43 @@ h1 {
     padding-top: 6px;
     color: #fff;
    } 
+
+@media screen and (max-width:  400px){
+    #datos{
+      width: 100%;
+      height: 500%;
+      margin: auto; padding: auto;
+    }
+    #categorias{
+      width: 80%;
+    }
+    #Selarea{
+      width: 80%;
+    }
+    #aficiones{
+      width: 80%;
+    }
+    #login{
+      width: 80%;
+    }
+    #logindatos{width: 100%;}
+    #login .img{width: 100%;}
+    .terminos{width: 100%;}
+    p.terminos{width: 100%;}
+    #login input{width: 100%;}
+    #login input.terminos{width: 100%;}
+    .control{width: 100%;}
+    .boton{width: 10%;}
+    .formdatos{width: 100%;}
+    
+    .formdatos form{width: 80%; height: 500%}
+    
+    .formdatos img{width: 100%;}
+    .formdatos button{width: 90%; margin: auto; padding: auto;}
+
+   
+    #contenedor{
+      width: 80%;
+      
+    }
+}

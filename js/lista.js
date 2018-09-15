@@ -1,19 +1,19 @@
-var idsarray = [1, 2 ,3 ,4 , 5];
+
 var id = 10020;
+id1=parseInt(localStorage.getItem('ids'));
 
 function llenarTabla(){
-	for (var i = 0; i < idsarray.length; i++) {
+	for (var i = 0; i < id1; i++) {
 		
-		var nombre = "a";
-		var talla = "b";
-		var img = "c";
-		var fecha = "fecha";
-		var precio = "precio";
-		var unit= "unidad";
-		var descrip= "bla bla bla";
-		var dirigido= "unisex";
-		var categoria = "categoria";
-		var cantidad = "cantidad";
+		var nombre = JSON.parse(localStorage['producto']);
+		var img = JSON.parse(localStorage['fotosReal']);
+		var fecha = JSON.parse(localStorage['fechas']);
+		var precio = JSON.parse(localStorage['precios']);
+		var unit= JSON.parse(localStorage['unidad']);
+		var descrip= JSON.parse(localStorage['desc']);
+		var dirigido= JSON.parse(localStorage['tipos']);
+		var categoria = JSON.parse(localStorage['cat']);
+		var cantidad = JSON.parse(localStorage['cantidad']);
 
 		var tablaPadre = document.getElementsByTagName('table')[0];
 
@@ -29,19 +29,18 @@ function llenarTabla(){
 		var celda8 = nuevaFila.insertCell(7);
 		var celda9 = nuevaFila.insertCell(8);
 		var celda10 = nuevaFila.insertCell(9);
-		var celda11 = nuevaFila.insertCell(10);
+		
 
 		celda1.innerHTML = id;
-		celda2.innerHTML = nombre;
-		celda3.innerHTML = talla;
-		celda4.innerHTML = img;
-		celda5.innerHTML = fecha;
-		celda6.innerHTML = precio;
-		celda7.innerHTML = unit;
-		celda8.innerHTML = descrip;
-		celda9.innerHTML = dirigido;
-		celda10.innerHTML = categoria;
-		celda11.innerHTML = cantidad;
+		celda2.innerHTML = nombre[i];
+		celda3.innerHTML = img[i];
+		celda4.innerHTML = fecha[i];
+		celda5.innerHTML = precio[i];
+		celda6.innerHTML = unit[i];
+		celda7.innerHTML = descrip[i];
+		celda8.innerHTML = dirigido[i];
+		celda9.innerHTML = categoria[i];
+		celda10.innerHTML = cantidad[i];
 		id=id+1;
 	}
 	
