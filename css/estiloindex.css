@@ -8,6 +8,8 @@ body{
     text-align: justify;
 }
 
+
+
 #headerimg img {
     width: 98%;
     margin-top: 5px;
@@ -78,6 +80,7 @@ article{
 
 .menu ul li a:visited {
     color: black;
+    
 }
 .menu ul li a:hover{
     background-color: #b7b7ad;
@@ -85,6 +88,7 @@ article{
 }
 .menu ul li a {
     text-decoration: none;
+
 }
 
 .menu li{
@@ -189,7 +193,7 @@ article{
 }
 
 label:hover{
-    background-color: gray;
+    background-color: #E5E8E8;
 }
 
 .slider input[type="radio"]:checked +label{
@@ -339,6 +343,7 @@ header div, footer div{
     }
     
     .colum2,
+
     .colum3{
         margin-top: 40px;
     }
