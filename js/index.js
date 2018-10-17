@@ -1,14 +1,12 @@
-function accesso(){
-	if (document.getElementById('pass').value!="Productos") {
-		alert("password incorrecto");
-	}else{
-		window.location = document.getElementById("pass").value + ".html"
-	}
+$("document").ready(function(){
+	$("#btnLog").click(function(){
 	
-}
-window.onload = function(){ 
+		if (document.getElementById('pass').value!="back") {
+			alert("password incorrecto");
+		}else{
+			window.location = "back.html"
+		}
 
-document.getElementById('btnLog').onclick = function() {accesso()};
- // id=parseInt(localStorage.getItem('ids'));
+});
+	});
 
-};

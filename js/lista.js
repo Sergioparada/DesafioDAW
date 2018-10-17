@@ -4,7 +4,7 @@ id1=parseInt(localStorage.getItem('ids'));
 
 function llenarTabla(){
 	for (var i = 0; i < id1; i++) {
-		
+		if (nombres[i]!=0) {
 		var nombre = JSON.parse(localStorage['producto']);
 		var img = JSON.parse(localStorage['fotosReal']);
 		var fecha = JSON.parse(localStorage['fechas']);
@@ -14,6 +14,7 @@ function llenarTabla(){
 		var dirigido= JSON.parse(localStorage['tipos']);
 		var categoria = JSON.parse(localStorage['cat']);
 		var cantidad = JSON.parse(localStorage['cantidad']);
+		var deportes = JSON.parse(localStorage['deportes']);
 
 		var tablaPadre = document.getElementsByTagName('table')[0];
 
@@ -29,6 +30,7 @@ function llenarTabla(){
 		var celda8 = nuevaFila.insertCell(7);
 		var celda9 = nuevaFila.insertCell(8);
 		var celda10 = nuevaFila.insertCell(9);
+		var celda11 = nuevaFila.insertCell(10);
 		
 
 		celda1.innerHTML = id;
@@ -41,7 +43,10 @@ function llenarTabla(){
 		celda8.innerHTML = dirigido[i];
 		celda9.innerHTML = categoria[i];
 		celda10.innerHTML = cantidad[i];
+		celda11.innerHTML = deportes[i];
+
 		id=id+1;
+	}
 	}
 	
 	

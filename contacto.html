@@ -4,50 +4,41 @@
 	<meta charset="utf-8">
 	<title>Contacto</title>
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
-	    <link rel="stylesheet" href="css/header.css">
-	    <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estiloindex.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/cont.js"></script>
+
 
 </head>
 <body>
-
-	<div id="headerimg"><img src="img/canchaheader.jpg" ></div>
+<div id="headerimg"><img src="img/main-banner.png" ></div>
     <header>
-
         <nav class="menu">
-            
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catalogo</a>
-                    <ul>
-                        <li><a href="">Futbol</a></li>
-                        <li><a href="">Basketball</a></li>
-                        <li><a href="">Baseball</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li>Nosotros</li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</li></a>
+                <li><a href="#">Acerca de Nosotros</a></li>
             </ul>
         </nav>
-       
-        <br>
+        <br><br>
     </header>
-
 	<div id="login">	
 		<form action="Ejercicio2.html" method="post">
 		<h1>Contacto</h1>
 		<fieldset id="logindatos">
 			
-			<input type="text" id="nombre" value="" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="control" placeholder="Nombre" required><br>
+			<input type="text" id="txtNombres" value="" pattern="^[a-zA-Z\s]+$" title="Solo se acepta letras" class="control" placeholder="Nombre" required><br>
 			
-			<input type="tel" id="telefono" value="" pattern="^[0-9]{4}-?[0-9]{4}$" title="Solo acepta números en el siguiente formato: 2222-2222" class="control" placeholder="Número de teléfono" required><br>
+			<input type="tel" id="txtTelefono" value="" pattern="^[0-9]{4}-?[0-9]{4}$" title="Solo acepta números en el siguiente formato: 2222-2222" class="control" placeholder="Número de teléfono" required><br>
 			
-			<input type="email" id="correo" value="" title="Formato de correo: NombreCorreo@dominio" class="control" placeholder="Correo Electrónico" required><br>
-			<link rel="stylesheet" type="text/css" href="css/estilo4.css">
+			<input type="email" id="txtCorreo" value="" title="Formato de correo: NombreCorreo@dominio" class="control" placeholder="Correo Electrónico" required><br>
+
 			<div id="comentario"><input type="text" id="coment" class="control" placeholder="Comentario" required ><br></div>
 			<input type="checkbox" value="acepto" class="terminos">
 			<p class="terminos">Acepto Términos, Condiciones y Política de Privacidad</p>
-			<button id="boton" type="submit">Enviar</button>
+			<input type="button" value="enviar" id="btnEnviar" name="">
 		</fieldset>
 	</form>
 	</div>

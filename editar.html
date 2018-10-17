@@ -5,13 +5,15 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/Productos.css">  
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-       <script type="text/javascript" src="js/cata.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
    
 </head>
 <body class="formdatos">
    <form action="Index.html" method="post">
    	 <img src="img/logo.png" alt="Logo de empresa"/>
-   	 <h1>Ingreso de Productos</h1>
+
+   	 <h1>Edicion de Productos</h1>
+    
    	 <fieldset id="datos">
    	 	<legend>Datos del Producto</legend>
    	 	<table border="0">
@@ -56,10 +58,10 @@
      
      	<legend>Categoría a la que pertenece</legend>
      	Dirigido para:<br><br>
-     	<input type="radio"  value="Caballeros" name="grupo" checked>Caballeros</input><br>
-     	<input type="radio"  value="Damas" name="grupo">Damas<br>
-     	<input type="radio"  value="Ninos" name="grupo">Niños<br>
-     	<input type="radio"  value="Ninas" name="grupo">Niñas<br><br>
+     	<input type="radio" id="Caballeros" value="Caballeros" name="grupo" checked>Caballeros</input><br>
+     	<input type="radio" id="Damas" value="Damas" name="grupo">Damas<br>
+     	<input type="radio" id="Ninos" value="Ninos" name="grupo">Niños<br>
+     	<input type="radio" id="Ninas"  value="Ninas" name="grupo">Niñas<br><br>
     
      	Categorizar Ingreso:
 
@@ -73,24 +75,31 @@
      	</select>
 
       <br><br> Para el Deporte:<br>
-      <input type="radio"  value="Futbol" name="depor" checked>Futbol</input><br>
-      <input type="radio"  value="Basketball" name="depor">Basketball<br>
-      <input type="radio"  value="Baseball" name="depor">Baseball<br>
+      <input type="radio" id="Futbol" value="Futbol" name="depor" checked>Futbol</input><br>
+      <input type="radio" id="Basketball" value="Basketball" name="depor">Basketball<br>
+      <input type="radio" id="Baseball" value="Baseball" name="depor">Baseball<br>
       
 
      </fieldset>
      <fieldset id="stocks">
      	<legend>Cuantificar Ingreso</legend>
      	Indique la cantidad del producto:<br><br>
-     	<input type="radio" name="stock" value="100" checked>100- Cien<br>
-     	<input type="radio" name="stock" value="300">300- Trescientos<br>
-     	<input type="radio" name="stock" value="500">500 -Quinientos<br>
-     	<input type="radio" name="stock" value="800">800- Ochocientos<br>
-     	<input type="radio" name="stock" value="1000">1000- Mil<br>
-     	<input type="radio" name="stock" value="1500">1500- Mil Quinientoss
+     	<input type="radio" id="100" name="stock" value="100" checked>100- Cien<br>
+     	<input type="radio" id="300" name="stock" value="300">300- Trescientos<br>
+     	<input type="radio" id="500" name="stock" value="500">500 -Quinientos<br>
+     	<input type="radio" id="800" name="stock" value="800">800- Ochocientos<br>
+     	<input type="radio" id="1000" name="stock" value="1000">1000- Mil<br>
+     	<input type="radio" id="1500" name="stock" value="1500">1500- Mil Quinientoss
      </fieldset>
-     <input type="button" class="boton" id="btnAceptarNom" name="" value="Enviar">
+     <select id="opcion">
+          <option>Elija ID del producto</option>
+      </select>
+     <input type="button" class="boton" id="btnEditar" name="" value="Editar">
+    <input type="button" class="boton" id="btnBorrar" value="Borrar">
    </form>
 <h2><a href="back.html">Regresar</a></h2>
+      
+     
+
 </body>
 </html>

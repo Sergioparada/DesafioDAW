@@ -1,6 +1,5 @@
 var producto = [];
 var tipos = [];
-
 var fotos = [];
 var fechas = [];
 var precios = [];
@@ -9,20 +8,24 @@ var fotosReal =[];
 var unidad=[];
 var desc=[];
 var cat=[];
-var cantidad=[]
-producto = JSON.parse(localStorage['producto']);
-tipos = JSON.parse(localStorage['tipos']);
+var cantidad=[];
+var deportes=[];
 
-fotosReal = JSON.parse(localStorage['fotosReal']);
-fechas = JSON.parse(localStorage['fechas']);
-precios = JSON.parse(localStorage['precios']);
-unidad = JSON.parse(localStorage['unidad']);
-unidad = JSON.parse(localStorage['unidad']);
-desc = JSON.parse(localStorage['desc']);
-cantidad = JSON.parse(localStorage['cantidad']);
-id=parseInt(localStorage.getItem('ids'));
-cat = JSON.parse(localStorage['cat']);
+if(localStorage["ids"]) {
+  producto = JSON.parse(localStorage['producto']);
+  tipos = JSON.parse(localStorage['tipos']);
+  fotosReal = JSON.parse(localStorage['fotosReal']);
+  fechas = JSON.parse(localStorage['fechas']);
+  precios = JSON.parse(localStorage['precios']);
+  unidad = JSON.parse(localStorage['unidad']);
+  desc = JSON.parse(localStorage['desc']);
+  cantidad = JSON.parse(localStorage['cantidad']);
+  cat = JSON.parse(localStorage['cat']);
+  deportes = JSON.parse(localStorage['deportes']);
 
+   id=parseInt(localStorage.getItem('ids'));
+  console.log(id);
+}
 
 function guardarProd(){
   producto[id]=document.getElementById("nomProd").value;
@@ -35,6 +38,8 @@ function guardarProd(){
   cat[id]=document.querySelector('input[name="grupo"]:checked').value; //dirigido a 
   cantidad[id]=document.querySelector('input[name="stock"]:checked').value;
   
+  deportes[id]=document.querySelector('input[name="depor"]:checked').value;
+
  	fotos[id] = document.getElementById('fotoPath').value;
 	if (fotos[id]) {
 		    var startIndex = (fotos[id].indexOf('\\') >= 0 ? fotos[id].lastIndexOf('\\') : fotos[id].lastIndexOf('/'));
@@ -46,7 +51,7 @@ function guardarProd(){
 
   id=id+1;
   localStorage.setItem('ids', id);
- // id=parseInt(localStorage.getItem('ids'));
+ // 
  
  
  
@@ -68,8 +73,6 @@ function guardarProd(){
   var JSONguardarTipos = JSON.stringify(tipos);
   localStorage.setItem('tipos', JSONguardarTipos);
   tipos = JSON.parse(localStorage['tipos']);
-
-
 
   var JSONguardarFotos = JSON.stringify(fotosReal);
   localStorage.setItem('fotosReal', JSONguardarFotos);
@@ -99,13 +102,19 @@ function guardarProd(){
   localStorage.setItem('cat', JSONguardarCat);
   cat = JSON.parse(localStorage['cat']);
 
+  var JSONguardarDep = JSON.stringify(deportes);
+  localStorage.setItem('deportes', JSONguardarDep);
+  deportes = JSON.parse(localStorage['deportes']);
+
 }
 
 
 
-window.onload = function(){ 
-
-  document.getElementById("btnAceptarNom").onclick= function() {guardarProd()};
- // id=parseInt(localStorage.getItem('ids'));
-
-};
+$("document").ready(function(){
+  $('#btnAceptarNom').click(function(){
+    guardarProd();
+    alert("Se ha ingresado con exito!");
+    location.reload();
+  });
+});
+ 

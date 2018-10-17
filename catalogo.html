@@ -7,31 +7,34 @@
 	<link rel="stylesheet" href="css/estiloscatalogo.css">
     <link rel="stylesheet" href="css/estiloindex.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/front.js"></script>
 </head>
 <body>
 	<div id="headerimg"><img src="img/main-banner.png" ></div>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="indexactual.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="#"></a>Contacto</li>
+                <li><a href="contacto.html">Contacto</li></a>
                 <li><a href="#">Acerca de Nosotros</a></li>
             </ul>
         </nav>
         <br><br>
     </header>
 	<div id="busqueda" >
-		<h3>Busque un producto especifico: </h3><input type="text" name="busquedatxt">
-		<input type="button" name="busquedabtn" value="Buscar">
+		<h3>Busque un producto especifico: </h3><input type="text" name="busquedatxt" id="txtBusqueda">
+		<input id="btnBusqueda" type="button" name="busquedabtn" value="Buscar">
+        <input id="btnLimpiar" type="button" name="busquedabtn" value="Limpiar Busqueda">
 	</div>
 	<div class="wrap">
 		<h1>Productos Destacados</h1>
 		<div class="store-wrapper">
 			<div class="category_list">
-				<a href="#" class="category_item" category="futbol">Futbol</a>
-				<a href="#" class="category_item" category="basketball">Basketball</a>
-				<a href="#" class="category_item" category="baseball">Baseball</a>
+				<a href="#" class="category_item" category="futbol" id="fut">Futbol</a>
+				<a href="#" class="category_item" category="basketball" id="basket">Basketball</a>
+				<a href="#" class="category_item" category="baseball" id="base">Baseball</a>
 				
 			</div>
 			<section id="sect" class="products-list">
@@ -117,12 +120,14 @@
                 </div>
 
             </div>
-        <script type="text/javascript" src="js/index.js"></script>
+       
         
 	</footer>
+
+    
 </body>
 </html>
-	<script type="text/javascript" src="js/lista.js"></script>
+	
 
 </body>
 </html>
