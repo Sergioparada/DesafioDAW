@@ -1,25 +1,42 @@
 
 var id = 10020;
 id1=parseInt(localStorage.getItem('ids'));
+var nombre = JSON.parse(localStorage['producto']);
+var img = JSON.parse(localStorage['fotosReal']);
+var fecha = JSON.parse(localStorage['fechas']);
+var precio = JSON.parse(localStorage['precios']);
+var unit= JSON.parse(localStorage['unidad']);
+var descrip= JSON.parse(localStorage['desc']);
+var dirigido= JSON.parse(localStorage['tipos']);
+var categoria = JSON.parse(localStorage['cat']);
+var cantidad = JSON.parse(localStorage['cantidad']);
+var deportes = JSON.parse(localStorage['deportes']);
+
+console.log(id1);
 
 function llenarTabla(){
-	for (var i = 0; i < id1; i++) {
-		if (nombres[i]!=0) {
-		var nombre = JSON.parse(localStorage['producto']);
-		var img = JSON.parse(localStorage['fotosReal']);
-		var fecha = JSON.parse(localStorage['fechas']);
-		var precio = JSON.parse(localStorage['precios']);
-		var unit= JSON.parse(localStorage['unidad']);
-		var descrip= JSON.parse(localStorage['desc']);
-		var dirigido= JSON.parse(localStorage['tipos']);
-		var categoria = JSON.parse(localStorage['cat']);
-		var cantidad = JSON.parse(localStorage['cantidad']);
-		var deportes = JSON.parse(localStorage['deportes']);
+	for (var i = 0; i <= id1; i++) {
+		
+		nombre = JSON.parse(localStorage['producto']);
+		 img = JSON.parse(localStorage['fotosReal']);
+		 fecha = JSON.parse(localStorage['fechas']);
+		 precio = JSON.parse(localStorage['precios']);
+		 unit= JSON.parse(localStorage['unidad']);
+		descrip= JSON.parse(localStorage['desc']);
+		 dirigido= JSON.parse(localStorage['tipos']);
+		 categoria = JSON.parse(localStorage['cat']);
+		 cantidad = JSON.parse(localStorage['cantidad']);
+		 deportes = JSON.parse(localStorage['deportes']);
+
+		
+
 
 		var tablaPadre = document.getElementsByTagName('table')[0];
 
+		
 		var nuevaFila = tablaPadre.insertRow(i+1);
-
+ 		
+ 		if (nombre[i]!=0) {
 		var celda1 = nuevaFila.insertCell(0);
 		var celda2 = nuevaFila.insertCell(1);
 		var celda3 = nuevaFila.insertCell(2);
@@ -46,13 +63,13 @@ function llenarTabla(){
 		celda11.innerHTML = deportes[i];
 
 		id=id+1;
-	}
+		} 
 	}
 	
 	
 
 }
 
-window.onload = function(){
+$("document").ready(function(){
 	llenarTabla();
-}
+});

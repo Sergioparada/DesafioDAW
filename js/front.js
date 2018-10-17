@@ -14,7 +14,8 @@ function agregarDiv(){
 	for (var i = 0; i < j; i++) {
 		
 	if (nombres[i]!=0) {
-	$('#sect').append(newDiv);
+	
+	newDiv.className = 'product-item';
 	var innerImg = document.createElement('img');
 	innerImg.src = "img/" + imagenes[i];
 	newDiv.appendChild(innerImg);
@@ -23,6 +24,8 @@ function agregarDiv(){
 	var texto = document.createTextNode(nombres[i]);
 	innerA.appendChild(texto);
 	newDiv.appendChild(innerA);
+	$('#sect').append(newDiv);
+
 		}
 	}
 };
