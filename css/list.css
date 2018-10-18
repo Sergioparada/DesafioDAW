@@ -1,3 +1,4 @@
+
 table{
 	border: solid 0.5px;
 }
@@ -8,11 +9,16 @@ tr{
 	border: solid 1px;
 }
 th{
-	width: 150px;
+	width: 200px;
 	border: solid 1px; 
 	background-color: #FAE5D3;
 }
 
 #desc{
 	width: 300px;
+}
+
+#banercoment{
+	position: relative;
+	left: 150px;
 }
