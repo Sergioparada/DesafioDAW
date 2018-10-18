@@ -39,10 +39,15 @@ header{
 .menu ul{
     display: flex;
     margin: auto;
+    font-family: 'Graduate', cursive;
+    color: white;
+    
+    font-size: 30px;
 }
 
 .menu ul li a:visited {
     color: black;
+
     
 }
 .menu ul li a:hover{
@@ -50,6 +55,7 @@ header{
     color: white;
 }
 .menu ul li a {
+    background-color: orange;
     text-decoration: none;
 
 }
@@ -59,6 +65,7 @@ header{
     padding: 15px;
     color: black;
     border-style: groove;
+    background-color: orange;
 
 }
 
