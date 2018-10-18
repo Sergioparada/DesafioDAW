@@ -247,8 +247,7 @@ $("document").ready(function(){
 		  localStorage.setItem('deportes', JSONguardarDep);
 		  deportes = JSON.parse(localStorage['deportes']);
 
-		  id=id-1;
-		  localStorage.setItem('ids', id);
+		 
 
 		  alert("Producto se ha borrado con exito!");
 		  location.reload();
