@@ -1,6 +1,6 @@
 #login{
 	margin-top: 4%;
-	margin-left: 32%;
+	margin-left: 35%;
 	margin-right: 32% 
 }
 
@@ -132,9 +132,184 @@ h1{
 	padding: 0;
 }
 
-@media screen and (max-width:  400px){
+@media screen and (max-width:  1100px){
 	#login{
 		width: 80%;
+		margin-left: 20%;
+	}
+	#login form{width: 80%; text-align: left;}
+		
+	#logindatos{width: 80%;}
+
+	#login .img{width: 80%;}
+
+	.terminos{width: 80%;}
+
+	p.terminos{width: 80%;}
+
+	#login input{width: 80%;}
+
+	#login input.terminos{width: 80%;}
+
+	.control{width: 80%;}
+
+	.boton{width: 80%;}
+
+	.formdatos{width: 80%;}
+
+	.formdatos form{width: 80%;}
+
+	.formdatos fieldset{width: 80%;}
+
+	.formdatos img{width: 80%;}
+
+	.formdatos button{width: 80%;}
+
+	.formdatos p{width: 80%;}
+
+	form{width: 80%; text-align: left;}
+
+	h1{width: 80%;}
+
+	#comentario #coment{width: 80%;}
+
+}
+
+@media screen and (max-width:  900px){
+	#login{
+		width: 80%;
+		margin-left: 20%;
+	}
+	#login form{width: 80%; text-align: left;}
+		
+	#logindatos{width: 80%;}
+
+	#login .img{width: 80%;}
+
+	.terminos{width: 80%;}
+
+	p.terminos{width: 80%;}
+
+	#login input{width: 80%;}
+
+	#login input.terminos{width: 80%;}
+
+	.control{width: 80%;}
+
+	.boton{width: 80%;}
+
+	.formdatos{width: 80%;}
+
+	.formdatos form{width: 80%;}
+
+	.formdatos fieldset{width: 80%;}
+
+	.formdatos img{width: 80%;}
+
+	.formdatos button{width: 80%;}
+
+	.formdatos p{width: 80%;}
+
+	form{width: 80%; text-align: left;}
+
+	h1{width: 80%;}
+
+	#comentario #coment{width: 80%;}
+
+}
+
+@media screen and (max-width:  700px){
+	#login{
+		width: 80%;
+		margin-left: 20%;
+	}
+	#login form{width: 80%; text-align: left;}
+		
+	#logindatos{width: 80%;}
+
+	#login .img{width: 80%;}
+
+	.terminos{width: 80%;}
+
+	p.terminos{width: 80%;}
+
+	#login input{width: 80%;}
+
+	#login input.terminos{width: 80%;}
+
+	.control{width: 80%;}
+
+	.boton{width: 80%;}
+
+	.formdatos{width: 80%;}
+
+	.formdatos form{width: 80%;}
+
+	.formdatos fieldset{width: 80%;}
+
+	.formdatos img{width: 80%;}
+
+	.formdatos button{width: 80%;}
+
+	.formdatos p{width: 80%;}
+
+	form{width: 80%; text-align: left;}
+
+	h1{width: 80%;}
+
+	#comentario #coment{width: 80%;}
+
+}
+
+@media screen and (max-width:  600px){
+	#login{
+		width: 80%;
+		margin-left: 20%;
+	}
+	#login form{width: 80%; text-align: left;}
+		
+	#logindatos{width: 80%;}
+
+	#login .img{width: 80%;}
+
+	.terminos{width: 80%;}
+
+	p.terminos{width: 80%;}
+
+	#login input{width: 80%;}
+
+	#login input.terminos{width: 80%;}
+
+	.control{width: 80%;}
+
+	.boton{width: 80%;}
+
+	.formdatos{width: 80%;}
+
+	.formdatos form{width: 80%;}
+
+	.formdatos fieldset{width: 80%;}
+
+	.formdatos img{width: 80%;}
+
+	.formdatos button{width: 80%;}
+
+	.formdatos p{width: 80%;}
+
+	form{width: 80%; text-align: left;}
+
+	h1{width: 80%;}
+
+	#comentario #coment{width: 80%;}
+
+}
+
+
+
+@media screen and (max-width:  350px){
+	#login{
+		width: 80%;
+		margin-left: 20%;
 	}
 	#login form{width: 80%; text-align: left;}
 		
